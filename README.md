@@ -1,46 +1,42 @@
-GenAI Builder
-This application builds a GenAI-powered search tool that helps users retrieve the information they need efficiently.
+# **GenAI Builder**
 
-🔧 Setup & Installation
-1. Prerequisites
+## **Overview**
+GenAI Builder is an AI-powered application that helps users search and retrieve the information they need efficiently. This application leverages OpenAI's API to provide intelligent responses based on user queries.
+
+## **Setup & Installation**
+
+### **Prerequisites**
 Ensure you have the following installed on your system:
+- **Docker** ([Install Docker](https://www.docker.com/get-started))
 
-Docker (Install from here)
-2. Get an OpenAI API Key
-Go to OpenAI API Keys.
+### **1. Get an OpenAI API Key**
+1. Go to [OpenAI API Keys](https://platform.openai.com/settings/organization/api-keys).
+2. Generate an API key.
+3. Create a `.env` file inside the project directory and add the following:
+   ```plaintext
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
-Generate an API key.
+## **🚀 Running the Application Using Docker**
 
-Save it in a .env file inside the project directory:
-
-plaintext
-Copy
-Edit
-OPENAI_API_KEY=your_api_key_here
-🚀 Run the Application Using Docker
-Build the Docker Image
-
-bash
-Copy
-Edit
+### **1. Build the Docker Image**
+```bash
 docker build -t genaidemo .
-Run the Container
+```
 
-bash
-Copy
-Edit
+### **2. Run the Container**
+```bash
 docker run -p 8080:5000 genaidemo
-Access the Application
+```
 
-Open your browser and go to:
-arduino
-Copy
-Edit
-http://localhost:8080
-📂 Project Structure
-scss
-Copy
-Edit
+### **3. Access the Application**
+- Open your browser and go to:
+  ```
+  http://localhost:8080
+  ```
+
+## **📂 Project Structure**
+```
 📦 genai-builder
 ├── 📄 Dockerfile
 ├── 📄 .env (Add API Key here)
@@ -48,12 +44,24 @@ Edit
 ├── 📄 requirements.txt (Dependencies)
 ├── 📂 templates (HTML templates)
 └── 📄 README.md (You are here)
-🛠️ Troubleshooting
-Issue: API key not found
-Ensure .env file exists and contains a valid API key.
-Issue: Port conflict on 8080
-Change the port mapping in the docker run command:
-bash
-Copy
-Edit
-docker run -p 9090:5000 genaidemo
+```
+
+## **🛠️ Troubleshooting**
+- **Issue:** API key not found  
+  **Solution:** Ensure the `.env` file exists and contains a valid API key.
+- **Issue:** Port conflict on `8080`  
+  **Solution:** Change the port mapping in the `docker run` command:
+  ```bash
+  docker run -p 9090:5000 genaidemo
+  ```
+
+## **📜 License**
+This project is licensed under the **MIT License**.
+
+## **🙌 Contributing**
+Feel free to open **issues** or **pull requests** to enhance the functionality!
+
+---
+
+**Happy Building! 🚀**
+
