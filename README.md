@@ -55,9 +55,6 @@ docker run -p 8080:5000 genaidemo
   docker run -p 9090:5000 genaidemo
   ```
 
-## **📜 License**
-This project is licensed under the **MIT License**.
-
 ## **🙌 Contributing**
 Feel free to open **issues** or **pull requests** to enhance the functionality!
 
